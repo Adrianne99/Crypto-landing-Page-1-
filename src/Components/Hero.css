@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background: #ba63ec;
+    background-size: cover;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding-top: 50px;
+}
+.col-1 h1{
+    font-size: 62px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#fb9857, #fcb86d, #c58a3c, #9d5f12);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span{
+    background: -webkit-linear-gradient(#093e61, #05325f);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3{
+    font-weight: 900;
+    color: white;
+    font-size: 22px;
+}
+
+h2{
+    background: #F28741;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p{
+    color: white;
+    font-size: 22px;
+}
+
+.col-2 img{
+    align-items: center;
+   width: 550px; 
+   height: 550px;
+}
+
+
+
+.btn-1{
+    margin-top: 20px;
+    padding: 14px 32px;
+    margin-right: 20px;
+    color: white;
+    background: #c58a3c;
+    font-weight: 900;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-1:hover{
+    background: transparent;
+    transition: 0.5s;
+    border: 2px solid #c58a3c;
+}
+
+.btn-2{
+    margin-top: 20px;
+    padding: 14px 32px;
+    background: transparent;
+    background: rgb(66,163,239);
+    border:  2px solid white;
+    color: white;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.btn-2:hover{
+    background: transparent;
+    border: 2px solid rgb(66,163,239);
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .container{
+        padding:20px;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .col-2 img{
+        width: 300px;
+        height: 300px;
+    }
+
+    h3{
+        font-size: 19px;
+    }
+
+    .col-1 h1{
+        font-size: 32px;
+        color: white;
+      font-weight: 900;
+    }
+    .btn-section{
+        margin: 15px;
+    }
+
+}
